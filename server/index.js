@@ -11,6 +11,10 @@ const io = socketio(server, { cors: { origin: '*' } });
 io.on('connection', (socket) => {
   console.log('We have a new connection!');
 
+  socket.on('join', ({ name, room }, callback) => {
+    console.log(name, room);
+  });
+
   socket.on('disconnect', () => {
     console.log('User had left!');
   });
@@ -19,4 +23,9 @@ io.on('connection', (socket) => {
 app.use(router);
 
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => console.log(`Server has started on port ${PORT}`));
+server.listen(PORT, (err) => {
+  if (err) {
+    throw Error(err);
+  }
+  console.log(`Server has started on port ${PORT}`);
+});
