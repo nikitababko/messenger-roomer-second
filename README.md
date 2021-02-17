@@ -5,7 +5,7 @@
 ## Install
 
 1. `npm install` or `yarn install`
-2. To run on the local server, go to the folder "client" => "components" => "index.zhs" and change the line - `const ENDPOINT = 'https://messenger-roomer-second.herokuapp.com/';` by `const ENDPOINT = 'localhost:5000';`
+2. To run on the local server, go to the folder "client" => "components" => "index.js" and change the line - `const ENDPOINT = 'https://messenger-roomer-second.herokuapp.com/';` by `const ENDPOINT = 'localhost:5000';`
 
 ## Built With
 
