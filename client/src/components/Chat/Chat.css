@@ -3,17 +3,18 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1a1a1d;
+  background-color: #e5e5e5;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #ffffff;
   border-radius: 8px;
   height: 60%;
   width: 35%;
+  background: #e5e5e5;
+  border: 3px solid #00bcd4;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
